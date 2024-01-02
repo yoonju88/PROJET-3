@@ -12,6 +12,13 @@
 .fa-solid {
     color: var(--main-color);
 }
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
 nav {
     display:flex;
     flex-direction: row;
@@ -21,10 +28,13 @@ nav {
 nav a {
     margin-left:30px;
     }
-body {
-    display: flex;
-    justify-content: center;
-}
+
+nav a:hover {
+        text-decoration:unset;
+        color:#0065FC
+     }   
+
+
 
 .main-container {
     width: 100%;
