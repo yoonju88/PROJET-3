@@ -13,7 +13,9 @@
 
 .fa-solid {
     color: var(--main-color);
+    margin-right: 10px;
 }
+
 
 body {
     display: flex;
@@ -56,6 +58,7 @@ margin-top:5px;
 
     padding-top: 20px;
     padding-bottom: 20px;
+    border-collapse: collapse;
 }
 
 h2 {
