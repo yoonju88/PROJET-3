@@ -327,8 +327,9 @@ input[type=search]{
 .activites-cards {
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content:center;
     column-gap: 33px;
+    
 }
 
 .activites-cards .card {
@@ -347,6 +348,28 @@ input[type=search]{
     height:13%;
     margin-top:15px;
     margin-left: 10px;
+}
+/* footer */
+.footer {
+    padding:20px;
+    background-color: var(--main-bg-color);
+    margin-top: 60px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 240px;
+
+}
+
+.footerdirection {
+   
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.footer h2 {
+    margin:0px;
 }
 
 
