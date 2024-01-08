@@ -22,7 +22,28 @@ body {
     justify-content: center;
 }
 
-/* code navigation  */
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    margin:0px;
+    font-size: 16px; 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*  navigation  */
 nav {
  height: 43px;
 
@@ -155,26 +176,6 @@ input[type=search]{
     column-gap:10px;
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-h2 {
-    font-size: 18px;
-}
-
-p {
-    margin:0px;
-    font-size: 16px; 
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
 /* Les proprétés commun pour les cards */
 .section-title {
@@ -232,8 +233,6 @@ a {
 .hebergements h2 {
     margin-top: 30px;
     margin-bottom: 0px;
-
-  
 }
 
 .hebergements-cards {
@@ -248,21 +247,20 @@ a {
  flex-direction: column;
  align-content: center;
  margin-top:33px;
- box-sizing: border-box;
  height:207px;
- object-fit:cover;
+ box-sizing: border-box; 
 }
 
 .hebergements-cards img {
-    height: 60%;
-    width:240px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+   height:60%;
+   width:240px;
+   border-radius: 20px 20px 0px 0px;
 }
 .hebergements-cards .card-content{
     padding-left:10px;
-    height:40%
+    height: 40%;   
 }
+
 .hebergements-cards .card-title {
     margin-top :10px;
     margin-bottom:5px;
@@ -287,7 +285,6 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 30px;
-
 }
 
 .populaires-cards img {
@@ -319,7 +316,38 @@ a {
     margin-bottom: 5px;
 }
 
+/* Activités à Marseille */
 
+.activites {
+    margin-top: 60px;
+    margin-left: 15px;
+    width: 95%;
+}
+
+.activites-cards {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    column-gap: 33px;
+}
+
+.activites-cards .card {
+  height:439px;
+  padding:0px;
+  margin-top:33px;
+}
+
+.activites-cards img{
+    height:87%;
+    width:297px;
+    border-radius: 20px 20px 0px 0px;    
+}
+
+.activites-cards h3 {
+    height:13%;
+    margin-top:15px;
+    margin-left: 10px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
