@@ -45,7 +45,7 @@ a {
 
 /*  navigation  */
 nav {
- height: 43px;
+    height: 43px;
 
     display:flex;
     flex-direction: row;
@@ -67,8 +67,8 @@ nav a:hover {
      }  
 
 nav img {
-width: 61px;
-margin-top:5px;     
+    width: 61px;
+    margin-top:5px;     
 }
 
 /* trouvez votre hebergement */
@@ -123,7 +123,6 @@ input[type=search]{
     justify-content:flex-start;
     align-items: center;
     column-gap: 22px;
-  
 }
 
 .search-button{
@@ -131,7 +130,6 @@ input[type=search]{
     font-weight:bold;
 
     width:134px;
-
     color:white;
     background-color: var( --main-color);
     
@@ -165,10 +163,11 @@ input[type=search]{
 .fa-info {
     padding:7px 12px 7px 12px;
     margin-right: 0px;
+
+    background-color: white;
     
     border:1px solid var(--grey-color);
     border-radius: 100px;
-    background-color: white;
     box-sizing: border-box;
 }
 
@@ -230,16 +229,23 @@ input[type=search]{
     width: 65%;   
 }
 
+.hebergements .section-title {
+    margin-left: 10px;
+    
+}
+
 .hebergements h2 {
     margin-top: 30px;
     margin-bottom: 0px;
+    margin-left: 10px;
 }
 
 .hebergements-cards {
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
-    column-gap: 30px;
+    justify-content: center;
+    column-gap: 33px;
 }
 
 .hebergements-cards .card {
@@ -248,12 +254,13 @@ input[type=search]{
  align-content: center;
  margin-top:33px;
  height:207px;
+ width: 240px;
  box-sizing: border-box; 
 }
 
 .hebergements-cards img {
    height:60%;
-   width:240px;
+   width:100%;
    border-radius: 20px 20px 0px 0px;
 }
 .hebergements-cards .card-content{
@@ -321,33 +328,39 @@ input[type=search]{
 .activites {
     margin-top: 60px;
     margin-left: 15px;
-    width: 95%;
-}
-
-.activites-cards {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    column-gap: 33px;
     
 }
 
+.activites .section-title{
+    margin-left:10px;
+
+}
+.activites-cards {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    column-gap: 33px;    
+}
+
 .activites-cards .card {
-  height:439px;
-  padding:0px;
-  margin-top:33px;
+    height:439px;
+    width:297px;
+    padding:0px;
+    margin-top:33px;
 }
 
 .activites-cards img{
     height:87%;
-    width:297px;
+    width:100%;
     border-radius: 20px 20px 0px 0px;    
 }
 
 .activites-cards h3 {
     height:13%;
+ 
     margin-top:15px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 /* footer */
 .footer {
@@ -359,7 +372,6 @@ input[type=search]{
     flex-direction: row;
     justify-content: flex-start;
     column-gap: 240px;
-
 }
 
 .footerdirection {
@@ -408,6 +420,7 @@ input[type=search]{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 }
 
 /* Small devices (phones, less than 768px) */
