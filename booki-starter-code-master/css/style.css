@@ -247,32 +247,29 @@ input[type=search]{
     width: 65%;   
 }
 
-.hebergements .section-title {
-    margin-left: 10px;
-    
-}
-
 .hebergements h2 {
     margin-top: 30px;
     margin-bottom: 0px;
-    margin-left: 10px;
+    
+    
 }
 
 .hebergements-cards {
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 33px;
 }
-
+.hebergements-cards a{
+    width:30%;
+}
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
     align-content: center;
     margin-top:33px;
     height:207px;
-    width: 240px;
     box-sizing: border-box; 
 }
 
@@ -370,8 +367,6 @@ input[type=search]{
 
 .activites-cards .card {
     padding:0px; 
-    
-    
 }
 
 .activites-cards img{
@@ -404,7 +399,7 @@ input[type=search]{
 }
 
 .footerdirection {
-    padding: 20px;
+    padding: 25px;
 
     display:flex;
     flex-direction: column;
