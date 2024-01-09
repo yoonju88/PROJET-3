@@ -135,7 +135,7 @@ input[type=search]{
     font-weight:bold;
 }
 
-.directionRow{
+.directionRow, .filtre-Row {
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
@@ -277,21 +277,22 @@ input[type=search]{
 }
 
 .hebergements-cards img {
-   height:60%;
+   height:55%;
    width:100%;
    border-radius: 20px 20px 0px 0px;
 }
 .hebergements-cards .card-content{
     padding-left:10px;
-    height: 40%;   
+    height: 45%;   
 }
 
 .hebergements-cards .card-title {
-    margin-top :10px;
+    margin-top :15px;
     margin-bottom:5px;
 }
 .hebergements-cards .card-rating {
     margin-top: 5px;
+    
 }
 
 
@@ -333,58 +334,56 @@ input[type=search]{
     margin-bottom: 4px;
 }
 
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
 /* .populaires-cards .card-subtitle {
     margin: 0;
 } */
 
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
-}
+
 
 /* Activités à Marseille */
 
 .activites {
+   
     margin-top: 60px;
-    margin-left: 15px;
-    
+    padding:30px;
 }
 
 .activites .section-title{
-    margin-left:10px;
+    margin-left:0px;
 
 }
 .activites-cards {
-    width:100%;
     display:flex;
     flex-direction:row;
-    justify-content:center;
-    column-gap: 33px;    
+    justify-content:space-between;
 }
 
 .activites-cards .card {
-    height:439px;
-    width:297px;
     padding:0px;
     margin-top:33px;
+    width:290px;
+    height:440px;
 }
 
 .activites-cards img{
-    height:87%;
+    height:86%; 
     width:100%;
-    border-radius: 20px 20px 0px 0px;    
+    border-radius: 20px 20px 0px 0px;   
 }
 
-.activites-cards h3 {
-    height:13%;
- 
-    margin-top:15px;
-    margin-left: 15px;
+.activites-cards .card-container {
+    height:12%;
+    padding: 0px 15px;
 }
+
+
 /* footer */
 .footer {
-    padding:20px;
-    background-color: var(--main-bg-color);
     margin-top: 60px;
+    background-color: var(--main-bg-color);
 
     display:flex;
     flex-direction: row;
@@ -393,7 +392,8 @@ input[type=search]{
 }
 
 .footerdirection {
-   
+    padding: 20px;
+
     display:flex;
     flex-direction: column;
     row-gap: 10px;
@@ -419,12 +419,16 @@ input[type=search]{
         display:none;
     }
 }
+
 @media screen and (max-width: 1024px) {
 
     .search-loupe {
         display:none;
     }
-
+    .filtre-Row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -456,7 +460,19 @@ input[type=search]{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activites{
+        width:100%;
+    }
+    
+    /* .activites-cards {
+        width:100%;
+    } */
+ 
 
+    .footer {
+        column-gap: 80px;
+        width:100%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
