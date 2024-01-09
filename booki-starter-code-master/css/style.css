@@ -267,13 +267,13 @@ input[type=search]{
 }
 
 .hebergements-cards .card {
- display: flex;
- flex-direction: column;
- align-content: center;
- margin-top:33px;
- height:207px;
- width: 240px;
- box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top:33px;
+    height:207px;
+    width: 240px;
+    box-sizing: border-box; 
 }
 
 .hebergements-cards img {
@@ -346,9 +346,10 @@ input[type=search]{
 /* Activités à Marseille */
 
 .activites {
-   
+    box-sizing: border-box;
     margin-top: 60px;
     padding:30px;
+    width:100%;
 }
 
 .activites .section-title{
@@ -359,25 +360,33 @@ input[type=search]{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    margin-top: 15px;
+}
+.activites-cards a{
+    width: 30%;
+    padding:15px;
 }
 
 .activites-cards .card {
-    padding:0px;
-    margin-top:33px;
-    width:290px;
-    height:440px;
+    padding:0px;   
 }
 
 .activites-cards img{
-    height:86%; 
+    height:370px; 
     width:100%;
-    border-radius: 20px 20px 0px 0px;   
+    border-radius: 20px 20px 0px 0px; 
+    object-fit: cover;  
 }
 
-.activites-cards .card-container {
-    height:12%;
-    padding: 0px 15px;
+.card-container {
+    height: 50px;
 }
+
+.activites-cards .card-title {
+    margin:0px;
+    padding:12px 15px 10px 15px;
+}
+
 
 
 /* footer */
@@ -450,10 +459,10 @@ input[type=search]{
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 32%;
     }
 
-    .populaires-cards .card-title {
+    .populaires-cards .card-title, {
         font-size: 14px;
     }
 
@@ -463,11 +472,13 @@ input[type=search]{
     .activites{
         width:100%;
     }
-    
-    /* .activites-cards {
-        width:100%;
-    } */
- 
+    .activites-cards img {
+        height:200px;
+    }
+   
+    .card-container{
+        height:70px;
+    }
 
     .footer {
         column-gap: 80px;
