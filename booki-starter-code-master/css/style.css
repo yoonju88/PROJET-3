@@ -460,6 +460,13 @@ input[type=search]{
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
     /* ... */
+    .search-button {
+        display:none;
+    }
+    .search-loupe {
+        display:flex;
+    }
+    
 }
