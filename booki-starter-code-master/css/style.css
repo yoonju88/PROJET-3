@@ -408,13 +408,13 @@ input[type=search]{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 
-@media screen and (max-width: 1990px) {
+@media screen and (max-width: 1900px) {
     .search-loupe {
         display:none;
     }
 }
 
-@media screen and (max-width: 1044px) {
+@media screen and (max-width: 1440px) {
     .search-loupe {
         display:none;
     }
