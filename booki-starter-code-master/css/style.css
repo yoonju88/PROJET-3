@@ -67,7 +67,7 @@ nav a:hover {
 
 nav img {
     width: 61px;
-    margin-top:5px;     
+    margin-top:5px;
 }
 
 /* trouvez votre hebergement */
@@ -252,8 +252,6 @@ input[type=search]{
 .hebergements h2 {
     margin-top: 30px;
     margin-bottom: 0px;
-    
-    
 }
 
 .hebergements-cards {
@@ -322,6 +320,7 @@ input[type=search]{
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -489,11 +488,49 @@ input[type=search]{
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
     /* ... */
+
+    .main-container {
+        padding: 0px;
+    }   
+
     .search-button {
         display:none;
     }
+
     .search-loupe {
         display:flex;
     }
+
+    nav {
+        display: flex;
+        height:120px;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top:0px;
+    }
+
+    nav img {
+    margin:auto;
+    }
     
+    nav a {
+        margin-left:0px;
+        padding:20px 20%;
+        border-bottom: 2px solid var(--main-bg-color);
+        }
+
+    nav a:hover {
+        border-bottom: 2px solid var(--main-color);
+        border-top: none;
+    }    
+
+    .nav-menu{
+       width:100%;
+
+       display: flex;
+       justify-content: space-around;
+    }
+
 }
+
+
