@@ -74,6 +74,8 @@ nav img {
 .search {
     margin-top:30px;
     margin-bottom:30px;
+    box-sizing:border-box;
+    width:100%;
 
     display: flex;
     flex-direction:column;
@@ -115,7 +117,7 @@ nav img {
 }
 
 input {
-    width: 193px;
+    width:14%;
     background-color: white; 
 
     border-width:1px 0px 1px 0px;
@@ -125,7 +127,7 @@ input {
 }
 
 .search-loupe input {
-    width:278px;
+    width:20%;
 }
 
 input[type=search]{
@@ -136,8 +138,11 @@ input[type=search]{
 .search-buttonfiltre .fa-solid {
     margin-right:10px;
 }
+.search-buttonfiltre {
+    box-sizing: border-box;
+}
 
-.directionRow, .filtre-Row {
+.search-filtre, .search-buttonfiltre, .search-plus {
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
@@ -179,6 +184,7 @@ input[type=search]{
 .buttonfiltre:hover {
     background-color:var(--filter-bg-color);
 }
+
 
 .fa-info {
     padding:7px 12px 7px 12px;
@@ -232,11 +238,14 @@ input[type=search]{
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
+.hebergements, .populaires {
+    background-color: var(--main-bg-color);
+}
+
 
 .section-title {
     margin: 0px;
@@ -246,7 +255,9 @@ input[type=search]{
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;   
+    width: 65%;  
+    display:flex;
+    flex-direction: column; 
 }
 
 .hebergements h2 {
@@ -259,7 +270,6 @@ input[type=search]{
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 33px;
 }
 .hebergements-cards a{
     width:30%;
@@ -268,7 +278,7 @@ input[type=search]{
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-top:33px;
+    margin-top:30px;
     height:207px;
     box-sizing: border-box; 
 }
@@ -287,9 +297,9 @@ input[type=search]{
     margin-top :15px;
     margin-bottom:5px;
 }
+
 .hebergements-cards .card-rating {
-    margin-top: 5px;
-    
+    margin-top: 5px;   
 }
 
 
@@ -420,11 +430,17 @@ input[type=search]{
     .search-loupe {
         display:none;
     }
+    input[type=search] {
+        width:15%;
+    }
 }
 
 @media screen and (max-width: 1440px) {
     .search-loupe {
         display:none;
+    }
+    input[type=search] {
+        width:15%;
     }
 }
 
@@ -432,8 +448,12 @@ input[type=search]{
 
     .search-loupe {
         display:none;
+        
     }
-    .filtre-Row {
+    input[type=search] {
+        width:22%;
+    }
+    .search-filtre {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -490,29 +510,22 @@ input[type=search]{
     /* ... */
 
     .main-container {
+        width:100%;
         padding: 0px;
     }   
 
-    .search-button {
-        display:none;
-    }
-
-    .search-loupe {
-        display:flex;
-    }
-
-    nav {
+     nav {
         display: flex;
         height:120px;
         flex-direction: column;
-        margin-bottom: 50px;
-        margin-top:0px;
+        margin:0px 0px;
+        padding:20px;
     }
 
     nav img {
     margin:auto;
     }
-    
+
     nav a {
         margin-left:0px;
         padding:20px 20%;
@@ -526,9 +539,63 @@ input[type=search]{
 
     .nav-menu{
        width:100%;
+        display: flex;
+       justify-content:space-around;
+    }
+    .search {
+        width:100%;
+        padding:20px;
+        margin:0px;       
+    }
+    .search-button {
+        display:none;
+    }
+    input[type=search]{
+        width:100%;
+    }
+    .search-loupe {
+        display:flex;
+    }
+    .search-buttonfiltre {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
 
-       display: flex;
-       justify-content: space-around;
+    .buttonfiltre {
+        width:46%;
+        font-size: 14px;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+        padding:30px 20px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .populaires {
+        background-color: var(--main-bg-color);
+        margin-top: 20px;
+    } 
+    .hebergements {
+        background-color:white;
+    }
+   
+    .populaires-cards, .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergements-cards .card, .populaires-cards .card {
+        margin-top:20px;
+    }
+    .populaires-cards a,.hebergements-cards a {
+        width: 100%;
+    }
+    .hebergements h2 {
+        margin-top: 20px;
     }
 
 }
