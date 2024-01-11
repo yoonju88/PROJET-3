@@ -127,25 +127,8 @@ header img {
     flex-direction: row;
 }
 
-.fa-magnifying-glass {
-    color: white;
-    width: 22px;
-    padding: 8px 8px;
-    margin: 0px;
-}
-
-.search-button-loupe {
-    border-radius: 15px;
-    border-width: 0px;
-
-    box-sizing: border-box;
-    background-color: var(--main-color);
-    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.3));
-    display: none;
-}
-
 .fa-location-dot {
-    margin-right: 0px;
+    margin: 0px;
     padding: 16px 19px;
 
     border-width: 0px;
@@ -156,8 +139,21 @@ header img {
 
     background-color: var(--main-bg-color);
     color: black;
-
 }
+
+.fa-magnifying-glass {
+    color: white;
+    width: 45px;
+    border-radius: 15px;
+    border-width: 0px;
+
+    box-sizing: border-box;
+    background-color: var(--main-color);
+
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.3));
+    display: none;
+}
+
 
 input {
     width: 14%;
@@ -197,7 +193,7 @@ input[type=search] {
     column-gap: 22px;
 }
 
-.search-button-rechercher {
+.search-button-txt {
     font-size: 18px;
     font-weight: bold;
 
@@ -500,11 +496,11 @@ input[type=search] {
         width: 32%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
+    .hebergements-and-populaires .card-title {
+        font-size: 16px;
     }
 
-    .populaires-cards .card-subtitle {
+    .hebergements-and-populaires .card-subtitle {
         font-size: 14px;
     }
 
@@ -537,7 +533,7 @@ input[type=search] {
         padding: 0px;
     }
 
-    nav {
+    header {
         display: flex;
         height: 120px;
         flex-direction: column;
@@ -545,26 +541,23 @@ input[type=search] {
         padding: 20px;
     }
 
-    nav img {
+    header img {
         margin: auto;
+        padding:0px;
     }
 
-    nav a {
-        margin-left: 0px;
-        padding: 20px 17%;
-        /* padding:20px 20%; */
-        border-bottom: 2px solid var(--main-bg-color);
-    }
-
-    nav a:hover {
-        border-bottom: 2px solid var(--main-color);
+    .nav-menu>li:first-child {
+        color: var(--main-color);
         border-top: none;
     }
 
+   
     .nav-menu {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
+        padding-left:25px;
+        margin:auto;
+        column-gap: 70px;
+        border-bottom: 2px solid var( --main-bg-color)
+
     }
 
     .search {
@@ -573,16 +566,16 @@ input[type=search] {
         margin: 0px;
     }
 
-    .search-button {
-        display: none;
-    }
 
     input[type=search] {
         width: 100%;
     }
 
-    .search-loupe {
+   .fa-magnifying-glass {
         display: flex;
+    }
+  .search-button-txt {
+        display: none;
     }
 
     .search-buttonfilter {
