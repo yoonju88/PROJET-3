@@ -20,9 +20,9 @@
         <header>
             <img src="images/logo/Booki.png" alt="logo Booki">
             <nav>
-                <ul class="nav-menu">
+                <ul>
                     <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
+                    <li class="two"><a href="#">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,9 +37,12 @@
                     <form class="search-button">
                         <i class="fa-solid fa-location-dot"></i>
                         <input type="search" name="search-ville" id="site-search" value="Marseille, France">
-                        <button class="search-button-rechercher" type="submit">Rechercher</button>
-                        <button class="search-button-loupe" type="submit"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="search-button-txt" type="submit">Rechercher</button>
+                        <div class="search-loupe">
+                            <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
                     </form>
                 </div>
                 <div class="search-filter">
@@ -120,7 +123,7 @@
                                     </div>
                                 </div>
                             </article>
-                        </a>
+                        </a>  
                         <a href="#">
                             <article class="card">
                                 <img src="images/hebergements/annie-spratt.jpg"
