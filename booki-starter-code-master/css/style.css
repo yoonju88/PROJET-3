@@ -215,7 +215,7 @@ input[type=search] {
 
 .buttonfilter {
     padding: 14px 22px;
-    background-color: white;
+    /* background-color: white; */
     border: 2px solid var(--grey-color);
     border-radius: 25px;
     box-sizing: border-box;
@@ -453,10 +453,13 @@ input[type=search] {
         display: none;
 
     }
-
-    input[type=search] {
-        width: 22%;
+    .search-button input {
+        width: 20.5%;
     }
+
+    /* input[type=search] {
+        width: 22%;
+    } */
 
     .search-filter {
         flex-direction: column;
