@@ -232,7 +232,6 @@ input[type=search] {
     font-size: 18px;
 }
 
-
 .buttonfilter:hover {
     background-color: var(--filter-bg-color);
 }
@@ -654,13 +653,17 @@ input[type=search] {
     }
 
     .hebergements h2 {
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+
+    .hebergements .section-subtitle {
+        margin-top:20px;
     }
 
     /* activités */
     .activites {
-        padding: 20px;
-        margin-top: 20px;
+        padding: 20px 30px;
+        margin-top: 40px;
     }
 
     .activites-cards img {
@@ -688,5 +691,6 @@ input[type=search] {
     .footer {
         padding: 30px;
         row-gap: 30px;
+        margin-top:50px;
     }
 }
