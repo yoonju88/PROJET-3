@@ -115,7 +115,7 @@ nav>ul>li:first-child {
 }
 
 
-.search-txt p {
+.search>div:first-child> p {
     margin-top: 10px;
 }
 
@@ -340,7 +340,7 @@ input[type=search] {
     margin-top: 5px;
 }
 
-.section-subtitle {
+.hebergements h3 {
     margin-top: 30px;
     margin-bottom: 0px;
     font-size: 18px;
@@ -439,6 +439,7 @@ input[type=search] {
         display: none;
 
     }
+
     .search-button input {
         width: 20.5%;
     }
@@ -587,7 +588,7 @@ input[type=search] {
     }
 
     .buttonfilter {
-        width:47.5%;
+        width: 47.5%;
         font-size: 14px;
         justify-content: flex-start;
     }
@@ -640,8 +641,8 @@ input[type=search] {
         margin-top: 10px;
     }
 
-    .hebergements .section-subtitle {
-        margin-top:20px;
+    .hebergements h3 {
+        margin-top: 20px;
     }
 
     /* activités */
@@ -675,6 +676,6 @@ input[type=search] {
     .footer {
         padding: 30px;
         row-gap: 30px;
-        margin-top:50px;
+        margin-top: 50px;
     }
 }
