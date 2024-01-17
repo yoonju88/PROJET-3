@@ -11,16 +11,24 @@
 
 }
 
+html,
+body{
+width:100%;
+overflow-x:hidden;
+}
+
 .fa-solid {
     color: var(--main-color);
 }
 
 
 body {
-    margin: 0px;
+    margin: 0px auto;
+    justify-content: center;
 }
 
 .main-container {
+    margin: 0px auto;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -667,6 +675,9 @@ input[type=search] {
     .activites-cards .card-title {
         margin: 0px;
         padding: 16px 15px;
+    }
+    .activites-cards .one, .activites-cards .two {
+        top:0px;
     }
 
     /* footer */
