@@ -73,7 +73,7 @@ nav>ul>li {
     padding-top: 15px;
 }
 
-nav>ul>li:first-child {
+nav>ul>li:hover {
     color: #0065FC;
     border-top: 2px solid var(--main-color);
 }
@@ -544,14 +544,14 @@ input[type=search] {
         padding-bottom: 15px;
     }
 
-    nav>ul>li:first-child {
+    nav>ul>li:hover {
         color: #0065FC;
         border-bottom: 2px solid var(--main-color);
         border-top: 0px;
         width: 50%;
     }
 
-    .two {
+    nav>ul>li{
         border-bottom: 2px solid var(--main-bg-color);
         width: 50%;
     }
