@@ -483,6 +483,11 @@ input[type=search] {
         height: 200px;
     }
 
+    .activites-cards .one, .activites-cards .two {
+        position:relative;
+        top:10px;
+    }
+
     .card-container {
         height: 70px;
     }
