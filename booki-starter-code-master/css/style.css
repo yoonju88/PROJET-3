@@ -182,7 +182,7 @@ input[type=search] {
 
 .search-loupe {
     position: absolute;
-    right: 6%;
+    left: 302px;
     display: none;
     background-color: var(--main-color);
     border: none;
@@ -575,7 +575,7 @@ input[type=search] {
     }
 
     .search-button input {
-        width: 80%;
+        width: 272px;
     }
 
     .search-loupe {
@@ -591,7 +591,7 @@ input[type=search] {
         width: 100%;
         row-gap: 20px;
         column-gap: 15px;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .search-filter h3 {
