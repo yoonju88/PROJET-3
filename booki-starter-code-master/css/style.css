@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -11,27 +12,21 @@
 
 }
 
-html,
-body {
-    width: 100%;
-}
-
 .fa-solid {
     color: var(--main-color);
 }
 
 
 body {
-    margin: 0px auto;
+    margin: 0px;
 
 }
 
 .main-container {
     margin: 0px auto;
-    width: 100%;
+    /* centrer la contenu dans la page web */
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
 }
 
 p {
@@ -50,7 +45,6 @@ a {
 
 header {
     height: 79px;
-
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -58,7 +52,7 @@ header {
 
 header img {
     width: 61px;
-    padding: 30px 30px 30px 0px;
+    padding: 30px 0px;
 }
 
 nav ul {
@@ -75,6 +69,7 @@ nav>ul>li {
 nav>ul>li:hover {
     color: #0065FC;
     border-top: 2px solid var(--main-color);
+    padding-top: 13px;
 }
 
 
@@ -133,7 +128,9 @@ nav>ul>li:hover {
 
 .search-button {
     display: flex;
-    align-items: center
+    /* align-items: center */
+    width:377px;
+    position:relative;
 }
 
 .buttonfilter .fa-solid {
@@ -150,7 +147,7 @@ nav>ul>li:hover {
 
 
 .search-button input {
-    width: 14%;
+    width:100%;
     height: 50px;
     margin-right: 0;
 
@@ -169,6 +166,7 @@ input[type=search] {
 .search-button-txt {
     font-size: 18px;
     font-weight: bold;
+    padding: 10px 15px;
 
     width: 134px;
     height: 50px;
@@ -181,7 +179,7 @@ input[type=search] {
 
 .search-loupe {
     position: absolute;
-    left: 302px;
+    right: 0px;
     display: none;
     background-color: var(--main-color);
     border: none;
@@ -251,12 +249,6 @@ input[type=search] {
 }
 
 /* Les proprétés commun pour les cards */
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
 
 .section-title {
     margin: 0px;
@@ -298,6 +290,13 @@ input[type=search] {
 .hebergements,
 .populaires {
     background-color: var(--main-bg-color);
+}
+
+.hebergements-and-populaires .card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 /****** Hebergements ***********/
@@ -408,49 +407,37 @@ input[type=search] {
 
 .activites-cards {
     display: flex;
-    /* flex-direction: row; */
     column-gap: 30px;
     margin-top: 30px;
 }
 
+
 .activites-cards a {
     width: 30%;
-}
-
-.activites-cards .card {
-    padding: 0px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .activites-cards img {
     height: 370px;
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
 
 .card-container {
-    height: 52px;
+    padding:15px 15px 20px 15px;
 }
 
 .activites-cards .card-title {
-    margin: 0px;
-    padding: 12px 15px 10px 15px;
-}
-
+   margin :0px;
+} 
 
 
 /* Media queries 1024px */
 
 @media screen and (max-width: 1024px) {
-
-    .search-loupe {
-        display: none;
-
-    }
-
-    .search-button input {
-        width: 20.5%;
-    }
 
     .search-filter {
         flex-direction: column;
@@ -496,15 +483,11 @@ input[type=search] {
         height: 200px;
     }
 
-    .activites-cards .one,
-    .activites-cards .two {
+    .card-container .one, .card-container .two {
         position: relative;
-        top: 10px;
-    }
+        top:7px;
+    } 
 
-    .card-container {
-        height: 70px;
-    }
 
     .footer {
         /* column-gap: 150px; */
@@ -523,10 +506,13 @@ input[type=search] {
     }
 
     header {
-        display: flex;
         height: 120px;
         flex-direction: column;
         margin: 0px;
+    }
+
+    header div {
+        margin:auto;
     }
 
     header img {
@@ -575,7 +561,8 @@ input[type=search] {
     }
 
     .search-button input {
-        width: 272px;
+        width: 100%;
+        margin-right:30px;
     }
 
     .search-loupe {
@@ -666,27 +653,18 @@ input[type=search] {
         height: 145px;
     }
 
-    .card-container {
-        height: 59px;
-    }
-
     .card {
         filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
-    }
+    } 
 
     .activites-cards {
         row-gap: 20px;
     }
 
-    .activites-cards .card-title {
-        margin: 0px;
-        padding: 16px 15px;
+    .card-container .one, .card-container .two {
+        top:0px;
     }
 
-    .activites-cards .one,
-    .activites-cards .two {
-        top: 0px;
-    }
 
     /* footer */
     .footer {
