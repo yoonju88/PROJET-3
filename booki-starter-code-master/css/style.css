@@ -12,9 +12,9 @@
 }
 
 html,
-body{
-width:100%;
-overflow-x:hidden;
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .fa-solid {
@@ -94,7 +94,7 @@ nav>ul>li:hover {
 }
 
 .footer div {
-    width:446px;
+    width: 446px;
 }
 
 .footer h5 {
@@ -497,9 +497,10 @@ input[type=search] {
         height: 200px;
     }
 
-    .activites-cards .one, .activites-cards .two {
-        position:relative;
-        top:10px;
+    .activites-cards .one,
+    .activites-cards .two {
+        position: relative;
+        top: 10px;
     }
 
     .card-container {
@@ -557,7 +558,7 @@ input[type=search] {
         width: 50%;
     }
 
-    nav>ul>li{
+    nav>ul>li {
         border-bottom: 2px solid var(--main-bg-color);
         width: 50%;
     }
@@ -682,8 +683,10 @@ input[type=search] {
         margin: 0px;
         padding: 16px 15px;
     }
-    .activites-cards .one, .activites-cards .two {
-        top:0px;
+
+    .activites-cards .one,
+    .activites-cards .two {
+        top: 0px;
     }
 
     /* footer */
