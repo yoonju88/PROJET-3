@@ -76,7 +76,6 @@ nav>ul>li:hover {
 
 /* footer */
 .footer {
-    box-sizing: border-box;
     margin-top: 60px;
     background-color: var(--main-bg-color);
     padding: 20px;
@@ -112,7 +111,6 @@ nav>ul>li:hover {
 .search {
     margin-top: 30px;
     margin-bottom: 30px;
-    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
@@ -232,7 +230,6 @@ input[type=search] {
 
     border: 1px solid var(--grey-color);
     border-radius: 100px;
-    box-sizing: border-box;
 }
 
 .search-plus {
@@ -313,7 +310,6 @@ input[type=search] {
     align-content: center;
     margin-top: 30px;
     height: 207px;
-    box-sizing: border-box;
 }
 
 .hebergements-cards img {
