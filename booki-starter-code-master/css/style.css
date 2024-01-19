@@ -284,7 +284,6 @@ input[type=search] {
 .hebergements-and-populaires section {
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
 }
 
 .hebergements,
@@ -384,7 +383,6 @@ input[type=search] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -399,7 +397,6 @@ input[type=search] {
 /* Activités à Marseille */
 
 .activites {
-    box-sizing: border-box;
     margin-top: 30px;
     padding: 30px;
     /* width: 100%; */
@@ -410,7 +407,6 @@ input[type=search] {
     column-gap: 30px;
     margin-top: 30px;
 }
-
 
 .activites-cards a {
     width: 30%;
@@ -664,7 +660,6 @@ input[type=search] {
     .card-container .one, .card-container .two {
         top:0px;
     }
-
 
     /* footer */
     .footer {
