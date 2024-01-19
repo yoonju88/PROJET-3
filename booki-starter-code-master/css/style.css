@@ -204,7 +204,7 @@ input[type=search] {
 }
 
 .buttonfilter {
-    padding: 14px 22px;
+    padding: 14px 20px;
     border: 2px solid var(--grey-color);
     border-radius: 25px;
     font-size: 18px;
@@ -567,6 +567,9 @@ input[type=search] {
         row-gap: 20px;
         column-gap: 15px;
         justify-content: space-between;
+    }
+    .buttonfilter div {
+        width:100%;
     }
 
     .search-filter h3 {
