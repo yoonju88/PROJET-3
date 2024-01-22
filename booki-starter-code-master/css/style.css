@@ -171,14 +171,17 @@ input[type=search] {
 .fa-magnifying-glass {
     color: white;
     font-size: 17px;
-
 }
 
 .buttonfilter .fa-solid {
     font-size: 21px;
 }
 
-.search-filter, .buttonfilter div{
+.search-filter, 
+.buttonfilter div,
+.search-buttonfilter,
+.buttonfilter, 
+.search-plus {
     display: flex;
     align-items: center;
 }
@@ -187,8 +190,6 @@ input[type=search] {
 }
 .search-buttonfilter, 
 .search-plus {
-    display: flex;
-    align-items: center;
     column-gap: 22px;
 }
 
@@ -198,8 +199,6 @@ input[type=search] {
     border-radius: 25px;
     font-size: 18px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -539,7 +538,6 @@ input[type=search] {
     }
 
     .search-button input {
-        width: 100%;
         margin-right:30px;
     }
 
