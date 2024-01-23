@@ -461,8 +461,6 @@ input[type=search] {
     /* ... */
 
     .main-container {
-        width: 100%;
-        max-width: 767.98px;
         min-width: 320px;
         padding: 0px;
     }
@@ -470,7 +468,7 @@ input[type=search] {
     header {
         height: 120px;
         flex-direction: column;
-        margin: 0px;
+        margin-bottom: 30px;
     }
 
     header div {
@@ -483,10 +481,6 @@ input[type=search] {
     }
 
     /* navagation  */
-    nav {
-        width: 100%;
-    }
-
     nav ul {
         padding-left: 0px;
         text-align: center;
@@ -517,7 +511,6 @@ input[type=search] {
 
     .search {
         padding: 20px;
-        margin-top: 10px;
         margin-bottom: 20px;
     }
 
@@ -539,7 +532,6 @@ input[type=search] {
 
     .search-buttonfilter {
         flex-wrap: wrap;
-        width: 100%;
         row-gap: 20px;
         column-gap: 15px;
         justify-content: space-between;
@@ -620,10 +612,6 @@ input[type=search] {
     .activites-cards img {
         height: 145px;
     }
-
-    .card {
-        filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
-    } 
 
     .activites-cards {
         row-gap: 20px;
