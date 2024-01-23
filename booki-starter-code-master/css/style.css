@@ -39,10 +39,7 @@ a {
     text-decoration: none;
 }
 
-
-
 /*  navigation header + footer */
-
 header {
     height: 79px;
     display: flex;
@@ -72,14 +69,11 @@ nav>ul>li:hover {
     padding-top: 13px;
 }
 
-
-
 /* footer */
 .footer {
     margin-top: 60px;
     background-color: var(--main-bg-color);
     padding: 20px;
-
     display: flex;
 }
 
@@ -296,7 +290,6 @@ input[type=search] {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    align-content: center;
     margin-top: 30px;
     height: 207px;
 }
@@ -337,7 +330,6 @@ input[type=search] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* 제목 정렬 스타일 */
 }
 
 .populaires-cards .card {
@@ -375,7 +367,6 @@ input[type=search] {
 .activites {
     margin-top: 30px;
     padding: 30px;
-    /* width: 100%; */
 }
 
 .activites-cards {
@@ -395,13 +386,12 @@ input[type=search] {
 .activites-cards img {
     height: 370px;
     width: 100%;
-    object-fit: cover;
 }
 
 .card-container {
     padding:15px 15px 20px 15px;
 }
-
+ 
 .activites-cards .card-title {
    margin :0px;
 } 
@@ -424,6 +414,14 @@ input[type=search] {
         flex-direction: column;
     }
 
+    .hebergements-and-populaires .card-title {
+        font-size: 16px;
+    }
+
+    .hebergements-and-populaires .card-subtitle {
+        font-size: 14px;
+    }
+
     .hebergements {
         width: 100%;
     }
@@ -443,14 +441,6 @@ input[type=search] {
         width: 32%;
     }
 
-    .hebergements-and-populaires .card-title {
-        font-size: 16px;
-    }
-
-    .hebergements-and-populaires .card-subtitle {
-        font-size: 14px;
-    }
-
     .activites-cards img {
         height: 200px;
     }
@@ -460,9 +450,7 @@ input[type=search] {
         top:7px;
     } 
 
-
     .footer {
-        /* column-gap: 150px; */
         margin-top: 30px;
     }
 }
@@ -649,5 +637,6 @@ input[type=search] {
         padding: 30px;
         row-gap: 30px;
         margin-top: 50px;
+        padding-bottom:100px;
     }
 }
