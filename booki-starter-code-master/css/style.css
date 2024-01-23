@@ -133,6 +133,7 @@ nav>ul>li:hover {
     border-top-color: var(--main-bg-color);
     border-bottom-color: var(--main-bg-color);
     border-style: solid;
+    outline: none;
 }
 
 input[type=search] {
