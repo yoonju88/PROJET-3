@@ -23,8 +23,7 @@ body {
 }
 
 .main-container {
-    margin: 0px auto;
-    /* centrer la contenu dans la page web */
+    margin: 0px auto;    /* centrer la contenu dans la page web */
     max-width: 1440px;
     padding: 0 50px;
 }
@@ -456,12 +455,9 @@ input[type=search] {
     }
 }
 
-/* Small devices (phones, less than 768px) */
-@media screen and (max-width: 767.98px) {
-    /* ... */
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
 
     .main-container {
-        min-width: 320px;
         padding: 0px;
     }
 
