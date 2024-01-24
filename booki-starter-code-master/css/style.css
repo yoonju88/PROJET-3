@@ -481,9 +481,6 @@ input[type=search] {
     nav>ul>li {
         padding-top: 0px;
         padding-bottom: 15px;
-    }
-
-    nav>ul>li {
         border-bottom: 2px solid var(--main-bg-color);
         width: 50%;
         padding-top: 15px;
