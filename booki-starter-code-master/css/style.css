@@ -522,20 +522,15 @@ input[type=search] {
         column-gap: 15px;
         justify-content: space-between;
     }
-    .buttonfilter div {
-        width:100%;
+
+    .buttonfilter {
+        width: 47.5%;
+        min-width: 155px;
     }
 
     .search-filter h3 {
         margin-top: 0px;
         padding-left: 0px;
-    }
-
-    .buttonfilter {
-        width: 47.5%;
-        min-width: 155px;
-        font-size: 14px;
-        justify-content: flex-start;
     }
 
     .buttonfilter p {
@@ -557,7 +552,6 @@ input[type=search] {
     }
 
     .populaires {
-        background-color: var(--main-bg-color);
         margin-top: 0px;
     }
 
