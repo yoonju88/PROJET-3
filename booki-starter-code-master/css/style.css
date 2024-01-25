@@ -398,7 +398,6 @@ input[type=search] {
 @media screen and (max-width: 1024px) {
 
     .search-filter {
-        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -406,6 +405,7 @@ input[type=search] {
         margin-top: 5px;
     }
 
+    .search-filter,
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -418,12 +418,12 @@ input[type=search] {
         font-size: 14px;
     }
 
-    .hebergements {
+    .hebergement,
+    .populaires{
         width: 100%;
     }
 
     .populaires {
-        width: 100%;
         margin-top: 50px;
     }
 
