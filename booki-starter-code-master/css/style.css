@@ -51,10 +51,15 @@ header img {
 
 nav ul {
     display: flex;
-    list-style-type: none;
     column-gap: 50px;
     margin-top: 0px;
 }
+
+nav ul,
+.footer>div>ul>li {
+    list-style-type: none;
+}
+
 
 nav>ul>li {
     padding-top: 15px;
@@ -84,7 +89,6 @@ nav>ul>li:hover {
 }
 
 .footer>div>ul>li {
-    list-style-type: none;
     padding-top: 10px;
 }
 
