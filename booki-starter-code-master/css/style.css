@@ -196,7 +196,7 @@ input[type=search] {
     font-size: 18px;
     font-weight: bold;
     justify-content: center;
-}
+} 
 
 .search-filter h3 {
     font-size: 18px;
@@ -377,6 +377,7 @@ input[type=search] {
 .activites-cards a {
     width: 30%;   
 }
+
  .activites-cards .card {
     background-color: white;
     border-radius: 20px;
@@ -384,7 +385,7 @@ input[type=search] {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
  }
 
-.activites-cards img {
+.activites-cards img { 
     height:380px;
     width: 100%;
 }
@@ -395,10 +396,6 @@ input[type=search] {
     padding-bottom: 13px;
     display: flex;
     align-items: center;
-}
-
-.activites-cards .card-title {
-    margin: 0px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -521,7 +518,7 @@ input[type=search] {
         row-gap: 20px;
         column-gap: 15px;
         justify-content: space-between;
-    }
+    } 
 
     .buttonfilter {
         width: 47.7%;
