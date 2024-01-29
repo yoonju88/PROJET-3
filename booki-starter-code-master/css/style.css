@@ -279,7 +279,6 @@ input[type=search] {
 
 .hebergements-cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
