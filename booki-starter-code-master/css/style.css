@@ -196,7 +196,7 @@ input[type=search] {
     font-size: 18px;
     font-weight: bold;
     justify-content: center;
-} 
+}
 
 .search-filter h3 {
     font-size: 18px;
@@ -374,23 +374,23 @@ input[type=search] {
 }
 
 .activites-cards a {
-    width: 30%;   
+    width: 30%;
 }
 
- .activites-cards .card {
+.activites-cards .card {
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
- }
+}
 
-.activites-cards img { 
-    height:380px;
+.activites-cards img {
+    height: 380px;
     width: 100%;
 }
 
 .card-container {
-    height:60px;
+    height: 60px;
     padding-left: 15px;
     padding-bottom: 13px;
     display: flex;
@@ -443,8 +443,9 @@ input[type=search] {
     .activites-cards img {
         height: 200px;
     }
+
     .activites-cards .card-container {
-        height:70px;
+        height: 70px;
     }
 
     .footer {
@@ -517,7 +518,7 @@ input[type=search] {
         row-gap: 20px;
         column-gap: 15px;
         justify-content: space-between;
-    } 
+    }
 
     .buttonfilter {
         width: 47.7%;
@@ -588,8 +589,9 @@ input[type=search] {
     .activites-cards img {
         height: 145px;
     }
+
     .activites-cards .card-container {
-        height:60px;
+        height: 60px;
     }
 
     .activites-cards {
@@ -602,7 +604,8 @@ input[type=search] {
         row-gap: 30px;
         margin-top: 50px;
     }
+
     .footer div {
-        width:100%;
+        width: 100%;
     }
 }
