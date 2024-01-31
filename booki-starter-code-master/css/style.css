@@ -189,7 +189,6 @@ input[type=search] {
     column-gap: 22px;
 }
 
-
 .buttonfilter {
     padding: 14px 20px;
     border: 2px solid var(--grey-color);
@@ -222,7 +221,6 @@ input[type=search] {
 }
 
 /* Les propriétés communs pour les cartes */
-
 .section-title {
     margin: 0px;
     font-size: 22px;
@@ -399,7 +397,6 @@ input[type=search] {
 }
 
 @media screen and (max-width: 1024px) {
-
     .search-filter {
         align-items: flex-start;
     }
@@ -492,7 +489,6 @@ input[type=search] {
     }
 
     /* search */
-
     .search {
         padding: 20px;
         margin-bottom: 20px;
