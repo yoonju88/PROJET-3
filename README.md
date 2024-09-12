@@ -1,3 +1,3 @@
-#Booki
+# Booki
 
 Dans ce projet, j’ai créé la page d’accueil d’une agence de voyage en utilisant HTML et CSS. Ma mission principale était d’intégrer une interface responsive à partir des maquettes Figma fournies pour mobile, tablette et desktop. J’ai développé des composants d’interface personnalisés pour correspondre exactement aux maquettes, ce qui m’a permis de mieux comprendre la structuration et le stylisage du code pour répondre aux exigences de design. Ce projet m’a aidé à développer des compétences essentielles en design responsive, garantissant que la page d’accueil s’affiche correctement sur tous les appareils et tailles d’écran.
